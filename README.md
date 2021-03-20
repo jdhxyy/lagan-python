@@ -100,3 +100,10 @@ for i in range(100):
 lagan.print_hex('case2', lagan.LEVEL_INFO, s)
 ````
 
+![图片](https://user-images.githubusercontent.com/1323843/111859054-e66e4800-8978-11eb-9b68-b0c0c77e90ac.png)
+
+## 日志文件控制
+文件分割大小设置为0,则不会保存到日志文件,仅终端打印：
+```python
+lagan.load(0)
+```
