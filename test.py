@@ -22,7 +22,7 @@ def case1():
     s = bytearray()
     for i in range(100):
         s.append(i)
-    lagan.print_hex('case2', lagan.LEVEL_INFO, s)
+    lagan.print_hex('case1', lagan.LEVEL_INFO, s)
 
 
 def case2():

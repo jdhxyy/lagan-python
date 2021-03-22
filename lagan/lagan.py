@@ -9,7 +9,6 @@ import logging
 import logging.handlers
 import os
 import threading
-import time
 
 from lagan.error import *
 
