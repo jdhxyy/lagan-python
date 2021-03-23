@@ -1,5 +1,4 @@
 import lagan
-import unittest
 
 
 def main():
@@ -12,7 +11,7 @@ def main():
 def case1():
     lagan.load()
     lagan.set_filter_level(lagan.LEVEL_DEBUG)
-    lagan.enable_color(True)
+    lagan.enable_color(False)
     lagan.println('case1', lagan.LEVEL_OFF, 'TestPrintOut1:%d', 100)
     lagan.println('case1', lagan.LEVEL_DEBUG, 'TestPrintOut1:%d', 100)
     lagan.println('case1', lagan.LEVEL_INFO, 'TestPrintOut1:%d', 100)

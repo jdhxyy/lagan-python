@@ -1,4 +1,4 @@
 from lagan.lagan import *
 from lagan.error import *
 
-__version__ = '1.0'
+__version__ = '1.1'

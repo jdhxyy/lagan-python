@@ -62,7 +62,7 @@ def load(log_file_max_size: int = 10, backup_count: int = 10) -> Error:
 
 def _init_log():
     """初始化日志模块"""
-    formatter = logging.Formatter('%(asctime)s - %(filename)s:%(lineno)s - %(message)s')
+    formatter = logging.Formatter('%(asctime)s - %(message)s')
     if _log_file_max_size > 0:
         _logger.setLevel(_filter_level)
 
@@ -201,7 +201,7 @@ def print_hex(tag: str, level: int, data: bytearray):
         _logger.log(level, new_format + s)
     if _is_color:
         _loggerStd.log(level, '\033[7;' + '%d;' % _level_color[
-            level] + '40m' + _level_ch[level] + '/' + tag + ': ' + new_format + '\033[0m' + s)
+            level] + '40m' + ': ' + new_format + '\033[0m' + s)
     else:
         _loggerStd.log(level, new_format + s)
 
