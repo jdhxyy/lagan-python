@@ -201,7 +201,7 @@ def print_hex(tag: str, level: int, data: bytearray):
         _logger.log(level, new_format + s)
     if _is_color:
         _loggerStd.log(level, '\033[7;' + '%d;' % _level_color[
-            level] + '40m' + ': ' + new_format + '\033[0m' + s)
+            level] + '40m' + new_format + '\033[0m' + s)
     else:
         _loggerStd.log(level, new_format + s)
 
